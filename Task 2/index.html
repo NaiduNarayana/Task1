@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lead Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <h1>Lead Submission Form</h1>
+        <form id="lead-form">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div>
+                <label for="deal-size">Deal Size (USD):</label>
+                <input type="number" id="deal-size" name="deal-size" required>
+            </div>
+            <div>
+                <label for="location">Location (City):</label>
+                <input type="text" id="location" name="location" required>
+            </div>
+            <button type="submit">Submit Lead</button>
+        </form>
+        <div id="error-message" class="hidden">Please complete all required fields!</div>
+        <div id="success-message" class="hidden">Lead submitted successfully!</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
