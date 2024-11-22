@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lead Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Lead Submission</h1>
+    <form id="leadForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required><br><br>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" required><br><br>
+
+        <label for="comments">Comments:</label>
+        <textarea id="comments" required></textarea><br><br>
+
+        <button type="submit">Submit Lead</button>
+    </form>
+
+    <div id="leadDetails"></div>
+    <div id="followUpReminder"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
